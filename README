@@ -1,0 +1,14 @@
+
+
+The application creates a barcode image on the fly, stores it in images 
+folder and links it in the webpage. Any older images from the user will be 
+deleted before generating a new one.
+
+The barcode is encoded in Code128/code B. I used the specs from 
+http://www.adams1.com/128code.html
+
+I had to reduce the width of the bar code for the machine to be able to read
+and identify it properly. 
+
+The barcode directory must be granted write access to whathever IUSR account is 
+used for anonymous and the ASPNET account too.
